@@ -50,7 +50,7 @@ export async function POST(req) {
     }
 
     const fastapiResponse = await axios.post(
-      'http://localhost:8000/run-pipeline',
+      'https://resumebackend-n25q.onrender.com/run-pipeline',
       form,
       { headers: form.getHeaders() }
     );
